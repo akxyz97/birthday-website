@@ -1,0 +1,117 @@
+/* === General Layout === */
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === Envelope Scene (Scene 0) === */
+#envelope {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+}
+
+/* === Birthday Text (Scene 1) === */
+#birthdayText {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+/* === Buttons === */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff69b4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* === Universal Gallery for Scene 2, 3, 4 === */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Universal Card (Polaroids, Trips, Foods) === */
+.card {
+  width: 220px;
+  height: auto; /* remove the fixed height */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Make sure the image has a fixed height only */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Add more padding to the bottom */
+.card p {
+  padding: 12px 8px 20px 8px; /* top, sides, bottom */
+  font-size: 14px;
+  text-align: center;
+}
+
+/* === Card Hover Effect === */
+.card:hover {
+  transform: scale(1.05) rotate(0deg);
+}
+#letterText {
+  margin-top: 30px;
+  white-space: pre-wrap;
+  font-size: 18px;
+  color: #ffdee2;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: center;
+}
+.scene-image {
+  width: 80%;      /* Adjust the width as needed */
+  max-width: 500px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Optional: button styling remains the same */
