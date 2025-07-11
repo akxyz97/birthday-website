@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Happy Birthday!</title>
+    <script>
+      const password = prompt("Enter the password to view the surprise:");
+      if (password !== "19970712") {
+    document.body.innerHTML = "<h2 style='color:white; text-align:center;'>Wrong password! Access denied.</h2>";
+      }
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
 
