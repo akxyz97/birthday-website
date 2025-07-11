@@ -9,14 +9,6 @@
 </head>
 <body>
 
-    <script>
-    const password = prompt("Enter the password to view the surprise:");
-    if (password !== "hibaby") {
-        document.body.innerHTML = "<h2 style='color:white; text-align:center;'>Wrong password! Access denied.</h2>";
-        throw new Error("Wrong password"); // Stop the rest of the script
-    }
-</script>
-
 <!-- Scene 0: Envelope -->
 <div id="scene0" class="scene">
     <img id="envelope" src="images/envelope.png" alt="Envelope">
